@@ -79,7 +79,7 @@ export const App = () => {
               <AddTaskBar
                 onCreate={(value) => {
                   if (!value) return;
-                  setTasks([...tasks, { id: Date.now(), text: value }]);
+                  setTasks([...tasks, { id: performance.now(), text: value }]);
                 }}
               />
               <TaskList
